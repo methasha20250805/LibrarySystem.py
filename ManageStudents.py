@@ -1,6 +1,6 @@
 from Validations import validate_studentid, validate_firstname
 from StoreData import load_students, save_students
-
+#student menu
 def student_manage_menu():
     while True:
         print("Manage Students")
@@ -17,7 +17,7 @@ def student_manage_menu():
             break
         else:
             print("Invalid choice")
-
+# add student
 def add_student():
     print("Add Student")
     students  = load_students()
@@ -47,7 +47,7 @@ def add_student():
     students.append(new_student)
     save_students(students)
     print("Student Added Successfully")
-
+#View all students
 def view_all_students():
     print("All Student details")
     students = load_students()

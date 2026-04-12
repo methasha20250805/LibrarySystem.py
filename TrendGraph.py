@@ -1,5 +1,5 @@
 from StoreData import load_transactions
-
+# trend graph
 def trend_graph():
     print("Trend Graph: Books issued by Date")
 
@@ -9,7 +9,7 @@ def trend_graph():
     if not issues:
         print("No issues yet.")
         return
-
+#error handling
     try:
         _plot_with_pandas_plotly(issues)
     except ImportError:
