@@ -5,6 +5,8 @@ from ReturnBook import return_book
 from TrendGraph import trend_graph
 from StoreData import load_books, load_students,load_transactions
 
+#main menu
+
 def main():
     books = load_books()
     students = load_students()

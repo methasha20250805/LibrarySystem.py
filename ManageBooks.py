@@ -1,6 +1,8 @@
 from Validations import (validate_bookid, validate_isbn, validate_title, validate_copies, validate_price)
 from StoreData import (load_books, save_books)
 
+# book menu
+
 def booksmenu():
     while True:
         print("Books Menu")
@@ -25,9 +27,11 @@ def booksmenu():
         else:
             print("Invalid Choice")
 
+# add books
 def add_book():
     print("Add Book")
     books = load_books()
+#validate bookID
     while True:
         book_id = input("Enter Book ID(2 letters + 2 digits, eg:AB12): ").upper()
         if not validate_bookid(book_id):
@@ -37,7 +41,7 @@ def add_book():
             print("Book ID already exists")
             continue
         break
-
+#validate ISBN number
     while True:
         isbn = input("Enter ISBN-13 number: ")
         if not validate_isbn(isbn):
@@ -47,28 +51,28 @@ def add_book():
                 print("A book with that ISBN number already exists")
                 continue
         break
-
+#validate title
     while True:
         title = input("Enter Book Title(maximum 20 characters): ").strip()
         if not validate_title(title):
             print("Invalid Book Title.Letters only, maximum 20 characters.")
             continue
         break
-
+#validate author
     while True:
         author = input("Enter Author: ")
         if not author:
             print("Author cannot be empty.")
             continue
         break
-
+#validate number of copies
     while True:
         copies_str = input("Enter number of copies (1 or 2): ")
         if not validate_copies(copies_str):
             print("Should be less than 2 copies.")
             continue
         break
-
+#validate price
     while True:
         price_str = input("Enter Price (with 2 decimal places): ")
         if not validate_price(price_str):
@@ -90,7 +94,7 @@ def add_book():
     books.append(new_book)
     save_books(books)
     print("Book Added Successfully.")
-
+#edit books
 def edit_book_menu():
     print("Edit / Update Book Details")
     print("1. Search by bookID")
@@ -182,6 +186,7 @@ def edit_book_menu():
 
     save_books(books)
     print("Book updated and saved Successfully.")
+#search books
 
 def search_book_menu():
     print("Search books")
@@ -220,7 +225,7 @@ def search_book_menu():
         return
 
     display_books(results)
-
+#View all books
 def view_book():
     print("View all books")
     books = load_books()
