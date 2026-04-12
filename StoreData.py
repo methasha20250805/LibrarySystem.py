@@ -1,6 +1,6 @@
 import csv
 import os
-
+# storing data
 BOOK_FILE = "book.csv"
 STUDENT_FILE = "student.csv"
 TRANSACTION_FILE = "transactions.csv"
@@ -8,7 +8,7 @@ TRANSACTION_FILE = "transactions.csv"
 BOOK_HEADERS = ["bookID", "title", "isbnNumber", "author", "copies", "availability", "price"]
 STUDENT_HEADERS = ["studentID", "firstName"]
 TRANSACTION_HEADERS = ["bookID", "studentID", "date", "type"]
-
+#writing and reading csv files
 def _load(filename: str, headers: list):
     if not os.path.exists(filename):
         with open(filename, "w", newline="") as f:

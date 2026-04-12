@@ -1,8 +1,8 @@
 import re
-
+#validate bookID
 def validate_bookid(bookid: str) -> bool:
     return bool(re.fullmatch(r'[A-Z]{2}\d{2}', bookid))
-
+#validate ISBN number
 def validate_isbn(isbn: str) -> bool:
     digits = isbn.replace('-', '').replace(' ', '')
     if not digits.isdigit() or len(digits) != 13:
@@ -13,26 +13,26 @@ def validate_isbn(isbn: str) -> bool:
         total += int(d) * weight
     check = (10 - (total % 10)) % 10
     return check == int(digits[12])
-
+#validate title
 def validate_title(title: str) -> bool:
     title = title.replace(' ', '')
     return bool(re.fullmatch(r'[A-Za-z]{1,20}', title))
-
+#validate number of copies
 def validate_copies(copies: str) -> bool:
     if not copies.isdigit():
         return False
     return 1 <= int(copies) <= 2
-
+#validate price
 def validate_price(price: str) -> bool:
     return bool(re.fullmatch(r'\d+\.\d{2}',price))
 
-
+#validate student ID
 def validate_studentid(studentid: str) -> bool:
     return bool(re.fullmatch(r'\d{8}',studentid))
-
+#Validate student first name
 def validate_firstname(firstname: str) -> bool:
     return bool(re.fullmatch(r'[A-Za-z]{1,10}',firstname))
-
+# validate date
 def validate_date(date: str) -> bool:
     from datetime import datetime
     try:
