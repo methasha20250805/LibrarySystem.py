@@ -1,7 +1,7 @@
 from Validations import validate_bookid, validate_studentid, validate_date
 from StoreData import load_books,save_books,load_students,load_transactions,append_transactions
 from datetime import datetime
-
+#return book
 def return_book():
     books = load_books()
     students = load_students()
@@ -28,12 +28,12 @@ def return_book():
             print("No student found")
             continue
         break
-
+#Check whether book already is there
     if not _currently_holds_book(transactions, bookid, studentid):
         print(f"Book '{book['title']}' has already been returned or was never issued to "
               f"student '{student['firstName']}'.")
         return
-
+# to check whether return data is after the issue date
     def _get_issue_date(transactions: list, bookid: str, studentid: str):
         issue_date = None
         for t in transactions:
