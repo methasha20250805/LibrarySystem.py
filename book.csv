@@ -1,5 +1,5 @@
 bookID,title,isbnNumber,author,copies,availability,price
-AB12,Start Python,978-1-60309-502-0,Nick Wilde,1,1,1200
-AC13,Learn Java,978-1788399081,Joannes Baily,2,1,2500
-AD14,Start Programming,978-0596528126,Rose Clark,1,1,3200
-AE15,Love to Code,978-0-7475-3269-9,Abraham Malenin,1,1,1350
+AB12,Start Python,978-1-60309-502-0,Nick Wilde,1,1,1200.00
+AC13,Learn Java,978-1788399081,Joannes Baily,2,1,2500.00
+AD14,Start Programming,978-0596528126,Rose Clark,1,1,3200.00
+AE15,Love to Code,978-0-7475-3269-9,Abraham Malenin,1,1,1350.00
