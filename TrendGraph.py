@@ -43,7 +43,7 @@ def _plot_with_pandas_plotly(issues: list):
         title_font_size=20,
         hovermode="x unified"
     )
-    print("Opening trend graph in your browser...")
+    print("Opening trend graph ...")
     fig.show()
 
 def _plot_with_matplotlib(issues: list):
