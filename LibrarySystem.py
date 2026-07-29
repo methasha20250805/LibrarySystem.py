@@ -23,9 +23,9 @@ def main():
         print("3. Issue Book")
         print("4. Return Book")
         print("5. Trend Graph")
-        print("6. Exit")
+        print("0. Exit")
 
-        choice = input("Enter your choice(1 - 6): ")
+        choice = input("Enter your choice (1 - 0): ")
 
         if choice == "1":
             booksmenu()
