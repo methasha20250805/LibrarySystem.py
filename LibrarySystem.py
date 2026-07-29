@@ -13,8 +13,8 @@ def main():
     transactions = load_transactions()
 
     print("Library Management System")
-    print(f"Loaded: {len(books)} book(s), {len(students)} student(s), "
-          f"{len(transactions)} transaction(s).")
+    print(f"Loaded: {len(books)} books, {len(students)} students, "
+          f"{len(transactions)} transactions.")
 
     while True:
         print("Main Menu")
