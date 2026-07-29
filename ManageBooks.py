@@ -157,7 +157,7 @@ def edit_book_menu():
         if validate_title(value):
             book["title"] = value
             break
-        print("Invalid title. Letters only, max 20 characters.")
+        print("Invalid title. Letters only, maximum 20 characters.")
 
     value = input(f"Author [{book['author']}]: ")
     if value:
