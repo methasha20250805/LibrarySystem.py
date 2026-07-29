@@ -173,7 +173,7 @@ def edit_book_menu():
             book["copies"] = str(new_copies)
             book["availability"] = str(max(0, new_copies - issued))
             break
-        print("Invalid. Copies must be 1 or 2.")
+        print("Invalid. Copies must be either 1 or 2.")
 
     while True:
         value = input(f"Price [{book['price']}]: ")
