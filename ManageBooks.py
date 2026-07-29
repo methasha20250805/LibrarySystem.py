@@ -148,7 +148,7 @@ def edit_book_menu():
         if validate_isbn(value):
             book["isbnNumber"] = value
             break
-        print("Invalid ISBN-13 number.")
+        print("Invalid ISBN number.")
 
     while True:
         value = input(f"Title [{book['title']}]: ")
