@@ -194,7 +194,7 @@ def search_book_menu():
     print("2. Search by Book Title")
     print("3. Search by ISBN 13 Number")
 
-    option = input("Enter your choice [1 -3]: ")
+    option = input("Enter your choice [1 -3]:")
     books = load_books()
 
     if option == "1":
