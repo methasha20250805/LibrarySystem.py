@@ -182,7 +182,7 @@ def edit_book_menu():
         if validate_price(value):
             book["price"] = value
             break
-        print("Invalid price. Must have exactly 2 decimal places (e.g. 1000.).")
+        print("Invalid price. Must have exactly 2 decimal places (e.g. 1000.00).")
 
     save_books(books)
     print("Book updated and saved Successfully.")
