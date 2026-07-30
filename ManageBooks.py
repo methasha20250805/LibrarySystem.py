@@ -249,4 +249,4 @@ def display_books(books):
     for b in books:
         print(f"{b['bookID']:<6} {b['title']:<22} {b['isbnNumber']:<18} "
               f"{b['author']:<20} {b['copies']:<7} {b['availability']:<15} {b['price']}")
-    print(f"Total: {len(books)} book(s) found.")
+    print(f"Total: {len(books)} books found.")
