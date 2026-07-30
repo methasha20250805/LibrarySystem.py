@@ -114,9 +114,9 @@ def edit_book_menu():
         keyword = input("Enter Book Title: ")
         results = [b for b in books if keyword.lower() in b["title"].lower()]
     elif option == "3":
-        isbn = input("Enter ISBN-13 number: ")
+        isbn = input("Enter ISBN 13 number: ")
         if not validate_isbn(isbn):
-            print("Invalid ISBN-13 number.")
+            print("Invalid ISBN 13 number.")
             return
         results = [b for b in books if b["isbnNumber"] == isbn]
     else:
