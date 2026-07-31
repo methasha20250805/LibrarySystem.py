@@ -55,7 +55,7 @@ def add_book():
     while True:
         title = input("Enter Book Title(maximum 20 characters): ").strip()
         if not validate_title(title):
-            print("Invalid Book Title.Letters only, maximum 20 characters.")
+            print("Invalid Book Title.")
             continue
         break
 #validate author
