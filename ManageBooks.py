@@ -45,7 +45,7 @@ def add_book():
     while True:
         isbn = input("Enter ISBN-13 number: ")
         if not validate_isbn(isbn):
-            print("Invalid ISBN-13 number. Check digit validation failed.")
+            print("Invalid ISBN 13 number.")
             continue
         if any(i["isbnNumber"]== isbn for i in books):
                 print("A book with that ISBN number already exists")
