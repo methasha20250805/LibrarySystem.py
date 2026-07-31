@@ -76,7 +76,7 @@ def add_book():
     while True:
         price_str = input("Enter Price (with 2 decimal places): ")
         if not validate_price(price_str):
-            print("Enter price to 2 decimal places.(eg: 20.00)")
+            print("Enter price to 2 decimal places.(eg: 1000.00)")
             continue
         break
 
