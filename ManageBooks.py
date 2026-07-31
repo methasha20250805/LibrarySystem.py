@@ -231,7 +231,7 @@ def view_book():
     books = load_books()
 
     if not books:
-        print("No books found in the system.")
+        print("No books recorded yet.")
         return
 
     display_books(books)
