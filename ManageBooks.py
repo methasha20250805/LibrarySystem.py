@@ -25,7 +25,7 @@ def booksmenu():
         elif choice == "5":
             break
         else:
-            print("Invalid Choice")
+            print("Invalid Choice.  Enter 1 - 5")
 
 # add books
 def add_book():
