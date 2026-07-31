@@ -204,7 +204,7 @@ def search_book_menu():
             return
         results = [b for b in books if b["bookID"] == book_id]
     elif option == "2":
-        keyword = input("Enter title keyword: ")
+        keyword = input("Enter title: ")
         if not keyword:
             print("No keyword entered.")
             return
