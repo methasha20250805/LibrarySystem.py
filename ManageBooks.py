@@ -12,7 +12,7 @@ def booksmenu():
         print("4. View all books")
         print("5. Back to main menu")
 
-        choice = input("Enter your choice [1 -5]: ")
+        choice = input("Enter your choice (1 -5:) ")
 
         if choice == "1":
             add_book()
