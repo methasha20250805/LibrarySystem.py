@@ -7,7 +7,7 @@ def booksmenu():
     while True:
         print("Books Menu")
         print("1. Add Book")
-        print("2. Edit / Update Book")
+        print("2. Edit and Update Book")
         print("3. Search book")
         print("4. View all books")
         print("5. Back to main menu")
