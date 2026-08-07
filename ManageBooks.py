@@ -101,7 +101,7 @@ def edit_book_menu():
     print("2. Search by book title")
     print("3. Search by ISBN-13 number")
 
-    option = input("Enter your choice [1 -3]: ")
+    option = input("Enter your choice: ")
     books = load_books()
 
     if option == "1":
