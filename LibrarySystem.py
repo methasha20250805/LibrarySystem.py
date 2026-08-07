@@ -25,7 +25,7 @@ def main():
         print("5. Trend Graph")
         print("0. Exit")
 
-        choice = input("Enter your choice (1 - 0): ")
+        choice = input("Enter your choice")
 
         if choice == "1":
             booksmenu()
