@@ -33,7 +33,7 @@ def add_book():
     books = load_books()
 #validate bookID
     while True:
-        book_id = input("Enter Book ID(2 letters followed by 2 digits, eg:AB12): ").upper()
+        book_id = input("Enter Book ID(eg:AB12): ").upper()
         if not validate_bookid(book_id):
             print("Invalid Book ID. Must be 2 letters followed by 2 digits")
             continue
