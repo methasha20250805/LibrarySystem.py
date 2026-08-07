@@ -67,7 +67,7 @@ def add_book():
         break
 #validate number of copies
     while True:
-        copies_str = input("Enter number of copies (1 or 2): ")
+        copies_str = input("Enter number of copies (Maximum only 2 copies): ")
         if not validate_copies(copies_str):
             print("Should be less than 2 copies.")
             continue
