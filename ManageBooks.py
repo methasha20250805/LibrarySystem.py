@@ -96,7 +96,7 @@ def add_book():
     print("Book Added Successfully.")
 #edit books
 def edit_book_menu():
-    print("Edit / Update Book Details")
+    print("Edit or Update Book Details")
     print("1. Search by bookID")
     print("2. Search by book title")
     print("3. Search by ISBN-13 number")
