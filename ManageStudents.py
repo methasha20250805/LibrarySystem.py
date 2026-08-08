@@ -23,7 +23,7 @@ def add_student():
     students  = load_students()
 
     while True:
-        studentid = input("Enter Student ID(8 digits): ")
+        studentid = input("Enter Student ID ( 8 digits ) -  ")
         if not validate_studentid(studentid):
             print("Invalid Student ID. Must be exactly 8 digits.")
             continue
