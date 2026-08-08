@@ -19,7 +19,7 @@ def student_manage_menu():
             print("Invalid choice")
 # add student
 def add_student():
-    print("Add Student")
+    print(" Add Student ")
     students  = load_students()
 
     while True:
