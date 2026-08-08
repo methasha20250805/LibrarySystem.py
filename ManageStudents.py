@@ -8,7 +8,7 @@ def student_manage_menu():
         print("2. View All Students")
         print("3. Back to Main menu")
 
-        choice = input("Enter your choice[1-3]: ")
+        choice = input("Enter your choice [1-3] -  ")
         if choice == "1":
             add_student()
         elif choice == "2":
