@@ -37,7 +37,7 @@ def main():
             return_book()
         elif choice == "5":
             trend_graph()
-        elif choice == "0":
+        elif choice == "6":
             print("Thank you for using the Library Management System. Goodbye!")
             break
         else:
