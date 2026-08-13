@@ -23,7 +23,7 @@ def main():
         print("3. Issue Book")
         print("4. Return Book")
         print("5. Trend Graph")
-        print("0. Exit")
+        print("6. Exit")
 
         choice = input("Enter your choice :  ")
 
