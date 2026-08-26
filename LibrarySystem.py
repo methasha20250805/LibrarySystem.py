@@ -43,7 +43,7 @@ def main():
         else:
             print("Invalid Choice. Please enter a valid choice.")
 
-        again = input("Do you want to go to the main menu? (yes/no): ")
+        again = input("Do you want to go to the main menu? : ")
         if again not in ("yes", "y"):
             print("Thank you for using the Library Management System. Goodbye!")
             break
