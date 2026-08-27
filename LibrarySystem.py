@@ -18,8 +18,8 @@ def main():
 
     while True:
         print("Main Menu")
-        print("1. Manage Books")
-        print("2. Manage Students")
+        print("1. Manage Books ")
+        print("2. Manage Students ")
         print("3. Issue Book")
         print("4. Return Book")
         print("5. Trend Graph")
