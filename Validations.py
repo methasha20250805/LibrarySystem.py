@@ -1,8 +1,8 @@
 import re
-#validate bookID
+#validating bookID
 def validate_bookid(bookid: str) -> bool:
     return bool(re.fullmatch(r'[A-Z]{2}\d{2}', bookid))
-#validate ISBN number
+#validating ISBN number
 def validate_isbn(isbn: str) -> bool:
     digits = isbn.replace('-', '').replace(' ', '')
     if not digits.isdigit() or len(digits) != 13:
