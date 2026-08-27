@@ -1,6 +1,6 @@
 import csv
 import os
-# storing data
+# Data is stored here
 BOOK_FILE = "book.csv"
 STUDENT_FILE = "student.csv"
 TRANSACTION_FILE = "transactions.csv"
